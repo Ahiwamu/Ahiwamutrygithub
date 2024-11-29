@@ -3,7 +3,19 @@ using namespace std;
 
 int main(){
     cout << "Enter an integer: ";
-    cout << "#Even numbers = ";
-    cout << "#Odd numbers = ";
+    int num, evennum = 0, oddnum = 0;
+    cin >> num;
+    while(num != 0){
+        if(num%2 == 0){
+            evennum++;
+        }
+        else{
+            oddnum++;
+        }
+        cout << "Enter an integer: ";
+        cin >> num;
+    }
+    cout << "#Even numbers = " << evennum << endl;
+    cout << "#Odd numbers = " << oddnum << endl;
     return 0;
 }
